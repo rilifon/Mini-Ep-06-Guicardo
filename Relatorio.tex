@@ -1,0 +1,34 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\title{Relatório - Mini EP 6 - Aplicando \emph{design patterns}}
+
+\author{
+Guilherme Schützer - NUSP 8658544 \\
+Ricardo Lira       - NUSP 8536131
+}
+
+\date{18/11/2014}
+
+\begin{document}
+\maketitle
+
+\section{Preparação}
+
+
+	Inicialmente, nós tivemos que decidir em algum programa/código e um Design Pattern
+para aplicar. Após várias decisões e escolhas, chegamos em um projeto que fizemos
+ano passado em MAC122: Um IMDB (Internet Movie DataBase) simplificado, que recebe
+arquivos de texto como entrada com vários filmes e informações adicionais como "nota"
+e "ano que foi lançado". Junto com essa escolha decidimos utilizar do Design Pattern \emph{Strategy}, focando em uma das características bacanas do programa: Os diferentes meios de ordenação da lista que foram/podem ser implementados.
+
+	O programa original possuia duas opções de \emph{sort}, que eram pra ser implementadas por nós: \emph{MergeSort} e \emph{QuickSort}. Com o padrão \emph{Strategy} na cabeça nós decidimos deixar de um jeito mais eficiente a utilização de novos \emph{sorts} no programa, e especialmente caso seja preciso adicionar novos.
+
+	O primeiro desafio foi a linguagem. Nosso exercício programa foi feito inicialmente em C,
+que por não ser uma linguagem orientada a objetos, dificulta um pouco aplicar de forma concreta os conhecimentos e funcionalidades do padrão \emph{Strategy} que vimos em sala de aula. Decidimos então primeiro traduzir o código para uma linguagem que melhor podemos usufruir das vantagens de \emph{design pattern}, e que condiz com nosso curso atual: Python.
+
+
+\end{document}
+
