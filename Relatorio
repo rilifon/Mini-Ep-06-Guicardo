@@ -14,17 +14,30 @@ PRIMEIRA PARTE : PREPARAÇÃO
 para aplicar. Após várias decisões e escolhas, chegamos em um projeto que fizemos
 ano passado em MAC122: Um IMDB (Internet Movie DataBase) simplifica, que recebe
 arquivos de texto como entrada com vários filmes e informações adicionais como "nota"
-e "ano que foi lançado". Junto com essa escolha decidimos utilizar do Design Pattern "Strategy",
-focando em uma das características bacanas do programa: Os diferentes meios de ordenação da lista
-que foram/podem ser implementados.
+e "ano que foi lançado". Pegamos aleatoriamente a versão do Guilherme para base. 
+Junto com essa escolha decidimos utilizar do Design Pattern "Strategy", focando em uma
+das características bacanas do programa: Os diferentes meios de ordenação da lista que
+foram/podem ser implementados.
 
-	O programa original possuia duas opções de "sort", que eram pra ser implementadas por nós:
-"MergeSort" e "QuickSort". Com o padrão "strategy" na cabeça nós decidimos deixar de um jeito
-mais eficiente a utilização de novos "sorts" no programa, e especialmente caso seja preciso adicionar
-novos.
+	O programa original possuia duas opções de "sort", que eram pra ser implementadas por
+nós: "MergeSort" e "QuickSort"(que era uma tarefa opcional, e que não está presente no nosso
+programa). Com o padrão "strategy" na cabeça nós decidimos deixar de um jeito mais eficiente
+a utilização de novos "sorts" no programa, e especialmente caso seja preciso adicionar outros.
 
 	O primeiro desafio foi a linguagem. Nosso exercício programa foi feito inicialmente em C,
-que por não ser uma linguagem orientada a objetos, dificulta um pouco aplicar de forma concreta os
-conhecimentos e funcionalidades do padrão "Strategy" que vimos em sala de aula. Decidimos então primeiro
-traduzir o código para uma linguagem que melhor podemos usufruir das vantagens de design pattern, e que
-condiz com nosso curso atual: Python.
+que por não ser uma linguagem orientada a objetos, dificulta um pouco aplicar de forma concreta
+os conhecimentos e funcionalidades do padrão "Strategy" que vimos em sala de aula. Decidimos
+então primeiro traduzir o código para uma linguagem que melhor podemos usufruir das vantagens
+de design pattern, e que condiz com nosso curso atual: Python.
+
+==================================
+SEGUNDA PARTE : COMEÇANDO O DESIGN
+==================================
+
+	Junto ao processo de traduzir o código para python, fizemos uns rascunhos de um diagrama
+para visualizar melhor o programa inicial, e já pensando como usar o padrão para o nosso projeto
+final. Entretanto percebemos que não é muito simples observar em grande escala nosso projeto do
+ano passado, parte por culpa de nós não termos esse habito na época de pensar em grande escala,
+diferente do que estamos aprendendo nesse curso.
+
+
