@@ -21,13 +21,25 @@ Ricardo Lira       - NUSP 8536131
 	Inicialmente, nós tivemos que decidir em algum programa/código e um Design Pattern
 para aplicar. Após várias decisões e escolhas, chegamos em um projeto que fizemos
 ano passado em MAC122: Um IMDB (Internet Movie DataBase) simplificado, que recebe
-arquivos de texto como entrada com vários filmes e informações adicionais como "nota"
-e "ano que foi lançado". Junto com essa escolha decidimos utilizar do Design Pattern \emph{Strategy}, focando em uma das características bacanas do programa: Os diferentes meios de ordenação da lista que foram/podem ser implementados.
+arquivos de texto como entrada com vários filmes e informações adicionais como``nota''
+e ``ano que foi lançado''. Junto com essa escolha decidimos utilizar do Design Pattern \emph{Strategy}, focando em uma das características bacanas do programa: Os diferentes meios de ordenação da lista que foram/podem ser implementados.
 
 	O programa original possuia duas opções de \emph{sort}, que eram pra ser implementadas por nós: \emph{MergeSort} e \emph{QuickSort}. Com o padrão \emph{Strategy} na cabeça nós decidimos deixar de um jeito mais eficiente a utilização de novos \emph{sorts} no programa, e especialmente caso seja preciso adicionar novos.
 
 	O primeiro desafio foi a linguagem. Nosso exercício programa foi feito inicialmente em C,
 que por não ser uma linguagem orientada a objetos, dificulta um pouco aplicar de forma concreta os conhecimentos e funcionalidades do padrão \emph{Strategy} que vimos em sala de aula. Decidimos então primeiro traduzir o código para uma linguagem que melhor podemos usufruir das vantagens de \emph{design pattern}, e que condiz com nosso curso atual: Python.
+
+\newpage
+
+\section{Transcrição e aplicação do \emph{design pattern}}
+
+	Para a transcrição do código, optamos por manter apenas as funcionalidades necessárias para a aplicação do padrão \emph{Strategy}. Isso significa a interação com a lista de filmes, ou seja, criação/remoção da elementos da lista, por \emph{input} manual ou por leitura de um arquivo (claro que, em Python, isso requer muito menos linhas - e menos ainda manipulação de
+	ponteiros e liberação de memória), e a opção de ordenação.
+
+	Assim, o contexto criado para o padrão compreende duas classes, \texttt{ListaFilmes} e \texttt{Filme}, para lidar com objetos de filme e lista. As implementações das classes, por sua vez, são praticamente iguais às respectivas implementações em C no código original. Contudo, com a nova versão do código, é possível trabalhar com mais de uma instância de lista, o que permite comparações e, consequentemente, maior riqueza de testes.
+
+	Para a aplicação do padrão, foi utilizando o módulo \texttt{ABC} da biblioteca padrão do Python, que permite a criação de classes abstratas explicitamente. Há no código a implementação de um ordenador padrão \texttt{StandardSort} que usa o método \texttt{sort()} da biblioteca padrão do Python.
+
 
 
 \end{document}
